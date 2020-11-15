@@ -1,0 +1,101 @@
+.nav {
+  display: flex;
+  border: solid 1px #000;
+  &-item {
+    padding: 5px 10px;
+    border-right: solid 1px #000;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &--selected {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: bold;
+
+  td {
+    border: solid 1px#000;
+    font-size: 15px;
+  }
+  &__record {
+    cursor: pointer;
+    &--selected {
+      background: rgb(207, 207, 207);
+    }
+  }
+  .col-1 {
+    width: 130px;
+  }
+}
+
+.pagination {
+  display: flex;
+  padding: 5px;
+}
+.pagination__item {
+  padding: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  &--selected {
+    background: #000;
+    color: #fff;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 100px;
+  left: 250px;
+  background: #fff;
+  border: solid 1px #ccc;
+  padding: 0 20px 10px;
+
+  &__footer {
+    margin-top: 10px;
+  }
+}
+
+.records-header {
+  display: flex;
+  margin: 5px 0;
+  align-items: flex-end;
+
+  h5 {
+    margin: 0;
+    margin-right: auto;
+    line-height: 1;
+  }
+}
+
+.actions {
+  .btn {
+    margin-left: 5px;
+  }
+}
+.app {
+  max-width: 570px;
+}
+.btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 15px;
+  cursor: pointer;
+
+  &:disabled {
+    background: #7e7e7e;
+  }
+}
